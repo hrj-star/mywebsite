@@ -14,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1988">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="e#311#320#0" expanded="true" />
               </folding>
@@ -35,10 +35,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="685" />
-    <option name="y" value="23" />
-    <option name="width" value="663" />
-    <option name="height" value="735" />
+    <option name="y" value="4" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -114,7 +113,7 @@
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1988">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="e#311#320#0" expanded="true" />
           </folding>

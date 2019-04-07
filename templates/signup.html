@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"  href="{% static 'logins/login'%}">
+
+
+
     <title>Register </title>
 </head>
 
 <body>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" />
-    </form>
+
+
+
 <div class="container">
-      <form style="margin-left: 25px;margin-right:25px; " method="post">
-        {% csrf_token %}
+
+
+      <form style="margin-left: 25px;margin-right:25px; " method="POST"  >
+               {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+
       <h2 style="font-size:36px;">Register</h2>
-          {{form.username}}
-          {{ form.email }}
-          {{form.password}}
-          {{form.password2}}
-          {{form.role}}
-         <br>
+            {% csrf_token %}
+          <br>
+ <p style="color: blue ; ">
+         <br>{{ form}}
+
+              </p>
+               <br>
+
 
  <button onclick="location.href='{% url 'home_page' %}'">Create Account</button>
+
       </form>
     </div>
 </body>

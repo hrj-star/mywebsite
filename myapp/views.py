@@ -85,30 +85,7 @@ def login_view(request):
     }
     return render(request, "login.html", context)
 
-@login_required
-def register_view(request):
 
-    next = request.GET.get('next')
-    form = UserRegisterForm(request.POST or None)
-    if form.is_valid():
-        user = form.save(commit=False)
-        password = form.cleaned_data.get('password')
-        user.set_password(password)
-        role=form.save(commit=False)
-        if role=='Faculty':
-            {
-             user.save()
-        }
-        new_user = authenticate(username=user.username, password=password,role=role)
-        login(request, new_user)
-        if next:
-            return redirect(next)
-        return redirect('/')
-
-    context = {
-        'form' : form,
-    }
-    return render(request, "signup.html", context)
 
 
 def logout_view(request):
